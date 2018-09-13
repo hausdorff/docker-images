@@ -1,0 +1,39 @@
+[user]
+	name = Alex Clemmer
+	email = clemmer.alexander@gmail.com
+[github]
+	user = Hausdorff
+	#token = 9970ddf523092ff97bdbf398e9db2bb1
+[core]
+	editor = vim
+	excludesfile = /Users/alex/.gitignore_global
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	ri = rebase -i
+	rc = rebase --continue
+	ra = rebase --abort
+	pu = push upstream
+	pff = pull --ff-only
+	pl = log --pretty=oneline --abbrev-commit
+	pld = log --oneline --decorate
+	c = !git add . && git commit -a
+	co = commit
+	s = status -sb
+	rs = !git add . && git reset --hard
+	a = add
+	d = diff
+	dc = diff --cached
+	shf = show --pretty="format:" --name-only
+	sh = show
+	b = branch
+	ch = checkout
+	p = pull
+	shot = show --pretty="format:" --name-only
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process

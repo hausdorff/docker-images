@@ -1,26 +1,25 @@
 export DOCKER_REPO_PREFIX=hausdorff
 
 # Git shit.
-git() {
+function git
     docker run -ti --rm \
-        -v "$(pwd):/git" \
+        -v "$PWD:/git" \
         -v "$HOME/.ssh:/root/.ssh" \
         -v "$HOME/.gitconfig:/root/.gitconfig" \
         -v "$HOME/.gitignore:/root/.gitignore" \
-        ${DOCKER_REPO_PREFIX}/git "$@"
-}
+        $DOCKER_REPO_PREFIX/git $argv
+end
 
 # Kubernetes shit.
-k(){
+function k
     docker run -it --rm \
-        -v "${HOME}:/root" \
-        ${DOCKER_REPO_PREFIX}/kubectl "$@"
-}
+        -v "$HOME:/root" \
+        $DOCKER_REPO_PREFIX/kubectl $argv
+end
 
-# Vim shit.
-vim() {
-     docker run -it --rm \
-        -v "/:/root-dir" \
-        ${DOCKER_REPO_PREFIX}/vim "$@"
-}
-
+# # Vim shit.
+# function vim
+#     docker run -it --rm \
+#         -v "$PWD:/vim" \
+#         $DOCKER_REPO_PREFIX/vim $argv
+# end

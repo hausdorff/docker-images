@@ -1,0 +1,99 @@
+// Place your settings in this file to overwrite the default settings
+{
+	"editor.insertSpaces": true,
+	"editor.renderWhitespace": "all",
+	"editor.fontSize": 0,
+	"editor.trimAutoWhitespace": true,
+	"files.trimTrailingWhitespace": true,
+        "files.associations": {
+                "**/Makefile.am": "shellscript",
+                "**/CMakeLists.txt": "shellscript",
+                "**/*.cmake": "shellscript",
+                "*.jsonnet": "json",
+                "*.libsonnet": "json"
+        },
+	"haskell.hlint.executablePath": "/Users/alex/.cabal/bin/hlint",
+	"haskell.ghcMod.executablePath": "/Users/alex/.cabal/bin/ghc-mod",
+
+	"rust.racerPath": "/Users/alex/.cargo/bin/racer",
+	//"rust.rustLangSrcPath": null, // Specifies path to /src directory of local copy of Rust sources
+	"rust.rustfmtPath": "/Users/alex/.cargo/bin/rustfmt", // Specifies path to Rustfmt binary if it's not in PATH
+	"rust.rustsymPath": "/Users/alex/.cargo/bin/rustsym", // Specifies path to Rustsym binary if it's not in PATH
+	//"rust.cargoPath": null, // Specifies path to Cargo binary if it's not in PATH
+	//"rust.cargoHomePath": null, // Path to Cargo home directory, mostly needed for racer. Needed only if using custom rust installation.
+	//"rust.formatOnSave": false, // Turn on/off autoformatting file on save (EXPERIMENTAL)
+	"rust.checkOnSave": true, // Turn on/off `cargo check` project on save (EXPERIMENTAL)
+	"rust.checkWith": "build", // Specifies the linter to use. (EXPERIMENTAL)
+	//"rust.useJsonErrors": false, // Enable the use of JSON errors (requires Rust 1.7+). Note: This is an unstable feature of Rust and is still in the process of being stablised
+	//"rust.useNewErrorFormat": false, // "Use the new Rust error format (RUST_NEW_ERROR_FORMAT=true)
+
+	"editor.tabSize": 4,
+	"editor.rulers": [80, 100],
+
+	"search.exclude": {
+		"build*": true,
+		".git": true,
+		"node_modules": true,
+		"**/typings": true,
+		"bower_components": true,
+		"**/docs": true,
+		"**/autom4te.cache": true
+	},
+	"window.zoomLevel": 0,
+	"editor.wordWrap": true,
+	"workbench.iconTheme": null,
+	"files.exclude": {
+		"**/.DS_Store": true,
+		"**/.git": true,
+		"**/.hg": true,
+		"**/.svn": true,
+		"**/CVS": true,
+		"**/node_modules": true,
+		"vendor": true
+	},
+	"typescript.experimental.syntaxFolding": true,
+	"editor.minimap.enabled": false,
+	"bracketPairColorizer.showBracketsInGutter": true,
+	"bracketPairColorizer.consecutivePairColors": [
+		"()",
+		"[]",
+		"{}",
+		[
+			"Gold",
+			"Orchid",
+			"LightSkyBlue"
+		],
+		"Red"
+	],
+	"bracketPairColorizer.activeScopeCSS": [
+		"borderStyle : solid",
+		"borderWidth : 1px",
+		"borderColor : {color}; opacity: 0.5",
+		"backgroundColor : {color}"
+	],
+	"prettier.printWidth": 100,
+	"prettier.tabWidth": 4,
+	"[javascript]": {
+		"editor.formatOnSave": true
+	},
+	"[typescript]": {
+		"editor.formatOnSave": true
+	},
+	"breadcrumbs.enabled": true,
+	"breadcrumbs.filePath": "on",
+	"vim.insertModeKeyBindings": [
+		{
+		  "before": ["j", "j"],
+		  "after": ["<Esc>"]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [";"],
+			"after": [":"]
+		}
+	],
+	"vim.useSystemClipboard": true,
+	"vim.whichwrap": "h,l,<,>",
+	"workbench.colorTheme": "Visual Studio Dark"
+}
